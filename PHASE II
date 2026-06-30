@@ -1,0 +1,12 @@
+Phase 2 – Automated Reconnaissance & Vulnerability Discovery
+3. Perform passive reconnaissance using your web browsing and search capabilities:
+   - Enumerate subdomains (via DNS lookups, certificate transparency logs).
+   - Identify technologies (web server, frameworks, CDN) using built-in knowledge.
+   - Discover exposed API endpoints (look for `/api/`, `/graphql`, `/swagger.json`, etc.).
+   - Check for common misconfigurations (e.g., open S3 buckets, exposed `.env` files, git repositories).
+   - Identify any AI chatbot or assistant interfaces present.
+4. Use tools available to you (code interpreter, shell) to run non-destructive scans like:
+   - `curl -I {{TARGET}}` to check headers.
+   - `nslookup` for subdomains.
+   - Retrieve `robots.txt`, `sitemap.xml` for hidden paths.
+5. Compile a report of all discovered assets and potential weak points.
